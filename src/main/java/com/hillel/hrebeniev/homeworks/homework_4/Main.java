@@ -9,5 +9,6 @@ public class Main {
         System.out.println("Об'єм паралелепіпеда = " + volume);
         int lenght = (a+b+c) * 4;
         System.out.println("Довжина сторін = " + lenght);
+
     }
 }
