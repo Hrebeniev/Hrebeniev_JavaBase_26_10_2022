@@ -7,63 +7,66 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Введите имя первой команды");
-        String FirstTeam = scanner.nextLine();
-        System.out.println(FirstTeam);
+        String firstTeam = scanner.nextLine();
+        System.out.println(firstTeam);
 
         System.out.println("Введите колличество фрагов Игрока 1");
-        int FirstTeam_player1 = scanner.nextInt();
+        double firstTeam_player1 = scanner.nextInt();
         scanner.nextLine();
 
         System.out.println("Введите колличество фрагов Игрока 2");
-        int FirstTeam_player2 = scanner.nextInt();
+        double firstTeam_player2 = scanner.nextInt();
         scanner.nextLine();
 
         System.out.println("Введите колличество фрагов Игрока 3");
-        int FirstTeam_player3 = scanner.nextInt();
+        double firstTeam_player3 = scanner.nextInt();
         scanner.nextLine();
 
         System.out.println("Введите колличество фрагов Игрока 4");
-        int FirstTeam_player4 = scanner.nextInt();
+        double firstTeam_player4 = scanner.nextInt();
         scanner.nextLine();
 
         System.out.println("Введите колличество фрагов Игрока 5");
-        int FirstTeam_player5 = scanner.nextInt();
+        double firstTeam_player5 = scanner.nextInt();
         scanner.nextLine();
 
         System.out.println("Введите имя второй команды");
-        String SecondTeam = scanner.nextLine();
-        System.out.println(SecondTeam);
+        String secondTeam = scanner.nextLine();
+        System.out.println(secondTeam);
 
         System.out.println("Введите колличество фрагов Игрока 1");
-        int SecondTeam_player1 = scanner.nextInt();
+        double secondTeam_player1 = scanner.nextInt();
         scanner.nextLine();
 
         System.out.println("Введите колличество фрагов Игрока 2");
-        int SecondTeam_player2 = scanner.nextInt();
+        double secondTeam_player2 = scanner.nextInt();
         scanner.nextLine();
 
         System.out.println("Введите колличество фрагов Игрока 3");
-        int SecondTeam_player3 = scanner.nextInt();
+        double secondTeam_player3 = scanner.nextInt();
         scanner.nextLine();
 
         System.out.println("Введите колличество фрагов Игрока 4");
-        int SecondTeam_player4 = scanner.nextInt();
+        double secondTeam_player4 = scanner.nextInt();
         scanner.nextLine();
 
         System.out.println("Введите колличество фрагов Игрока 5");
-        int SecondTeam_player5 = scanner.nextInt();
+        double secondTeam_player5 = scanner.nextInt();
         scanner.nextLine();
 
-        int FragsFirstTeam = (FirstTeam_player1+FirstTeam_player2+FirstTeam_player3
-                +FirstTeam_player4+FirstTeam_player5) / 5;
+        double fragsFirstTeam =
+                (firstTeam_player1 + firstTeam_player2 + firstTeam_player3 +
+                        firstTeam_player4 + firstTeam_player5) / 5;
+        System.out.println(fragsFirstTeam);
 
-        int FragsSecondTeam = (SecondTeam_player1+SecondTeam_player2+SecondTeam_player3
-                +SecondTeam_player4+SecondTeam_player5) / 5;
+        double fragsSecondTeam = (secondTeam_player1 + secondTeam_player2 +
+                secondTeam_player3 + secondTeam_player4 + secondTeam_player5) / 5;
+        System.out.println(fragsSecondTeam);
 
-        if (FragsFirstTeam > FragsSecondTeam) {
-            System.out.println("Победила команда " + FirstTeam + ", набрала " + FragsFirstTeam + " очков");
-        } else if (FragsFirstTeam < FragsSecondTeam) {
-            System.out.println("Победила команда " + SecondTeam + ", набрала " + FragsSecondTeam + " очков");
+        if (fragsFirstTeam > fragsSecondTeam) {
+            System.out.println("Победила команда " + firstTeam + ", набрала " + fragsFirstTeam + " очков");
+        } else if (fragsFirstTeam < fragsSecondTeam) {
+            System.out.println("Победила команда " + secondTeam + ", набрала " + fragsSecondTeam + " очков");
         } else {
                     System.out.println("Ничья");
                 }
