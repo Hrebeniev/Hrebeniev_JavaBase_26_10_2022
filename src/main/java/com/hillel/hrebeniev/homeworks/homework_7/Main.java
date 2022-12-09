@@ -5,9 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         int numberMember = (int) (Math.random() * 10);
-        System.out.println(numberMember);
         Scanner scanner = new Scanner(System.in);
-
         System.out.println("Испытайте удачу :)");
         System.out.println("Введите число от 0 до 10: ");
 

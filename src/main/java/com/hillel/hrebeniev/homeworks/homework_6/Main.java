@@ -68,8 +68,8 @@ public class Main {
         } else if (fragsFirstTeam < fragsSecondTeam) {
             System.out.println("Победила команда " + secondTeam + ", набрала " + fragsSecondTeam + " очков");
         } else {
-                    System.out.println("Ничья");
-                }
+            System.out.println("Ничья");
         }
     }
+}
 
