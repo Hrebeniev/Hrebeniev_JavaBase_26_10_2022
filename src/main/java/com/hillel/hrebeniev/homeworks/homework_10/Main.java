@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
+
         int[] first = new int[7];
         int[] second = new int[7];
         for (int i = 0; i < first.length; i++) {
@@ -29,7 +30,21 @@ public class Main {
                 match++;
             }
         }
-        System.out.println("Количество совпадений: " + match);
-
+        int newMatch = 0;
+        int[] arr = new int[match];
+        if (match > 0) {
+            for (int i = 0; i < first.length; i++) {
+                if (first[i] == second[i]) {
+                    arr[newMatch] = i;
+                    newMatch++;
+                }
+            }
+        }
+        if (match > 0) {
+            System.out.println("Количество совпадений: " + match);
+            System.out.println("Совпали индексы: " + Arrays.toString(arr));
+        } else {
+            System.out.println("Совпадений нет");
+        }
     }
 }
