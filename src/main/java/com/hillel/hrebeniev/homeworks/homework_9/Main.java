@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int max = 40;
+        int max = 41;
         int min = 18;
         int arr1[] = new int[25];
         int sum1 = 0;
