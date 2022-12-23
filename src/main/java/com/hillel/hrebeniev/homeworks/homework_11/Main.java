@@ -11,18 +11,19 @@ public class Main {
             System.out.println("Это не число! Повторите");
             scanner.next();
         }
-        int M = scanner.nextInt();
+
+        int m = scanner.nextInt();
 
         System.out.print("Введите целое число N: ");
         while (!scanner.hasNextInt()) {
             System.out.println("Это не число! Повторите");
             scanner.next();
         }
-        int N = scanner.nextInt();
+        int n = scanner.nextInt();
         scanner.close();
 
-        int[][] first = new int[M][N];
-        int[][] second = new int[N][M];
+        int[][] first = new int[m][n];
+        int[][] second = new int[n][m];
         System.out.println();
         System.out.println("Before: ");
         for (int i = 0; i < first.length; i++) {
