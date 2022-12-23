@@ -7,20 +7,44 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите целое число M: ");
-        while (!scanner.hasNextInt()) {
-            System.out.println("Это не число! Повторите");
-            scanner.next();
+        boolean isReady = false;
+        int m = 0;
+        while (!isReady) {
+            boolean hasNextInt = scanner.hasNextInt();
+            if (hasNextInt) {
+                m = scanner.nextInt();
+                if (m < 0) {
+                    System.out.println("Это число меньше 0! Повторите!");
+                    scanner = new Scanner(System.in);
+                } else {
+                    isReady = true;
+                }
+            } else {
+                System.out.println("Это не число! Повторите!");
+                scanner = new Scanner(System.in);
+            }
         }
-
-        int m = scanner.nextInt();
 
         System.out.print("Введите целое число N: ");
-        while (!scanner.hasNextInt()) {
-            System.out.println("Это не число! Повторите");
-            scanner.next();
+        isReady = false;
+        int n = 0;
+        while (!isReady) {
+            boolean hasNextInt = scanner.hasNextInt();
+            if (hasNextInt) {
+                n = scanner.nextInt();
+                if (n < 0) {
+                    System.out.println("Это число меньше 0! Повторите!");
+                    scanner = new Scanner(System.in);
+                } else {
+                    isReady = true;
+                }
+            } else {
+                System.out.println("Это не число! Повторите!");
+                scanner = new Scanner(System.in);
+            }
         }
-        int n = scanner.nextInt();
         scanner.close();
+
 
         int[][] first = new int[m][n];
         int[][] second = new int[n][m];
