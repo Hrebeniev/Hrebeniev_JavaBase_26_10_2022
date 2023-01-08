@@ -11,5 +11,10 @@ public class Main {
         artistRock.name = "Куркули";
         ClassicMusic artistClassic = new ClassicMusic();
         artistClassic.name = "Bethoven";
+
+        MusicStyles[] musicStyles = {artistPop, artistRock, artistClassic};
+        for (MusicStyles group : musicStyles) {
+            group.playMusic();
         }
     }
+}
