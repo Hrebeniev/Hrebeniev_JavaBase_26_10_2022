@@ -1,12 +1,12 @@
 package com.hillel.hrebeniev.homeworks.homework_14;
 
 class Fitness {
-    private String name;
-    private int dayOfBirthday;
-    private int monthOfBirthday;
-    private int yearOfBirthday;
-    private String email;
-    private String phone;
+    private final String name;
+    private final int dayOfBirthday;
+    private final int monthOfBirthday;
+    private final int yearOfBirthday;
+    private final String email;
+    private final String phone;
     private String surname;
     private double weight;
     private String pressure;
