@@ -8,7 +8,7 @@ public class Main {
             DrinkPreparing drinksMachine = new DrinkPreparing();
             drinksMachine.start();
             drinksMachine.process();
-            System.out.println("До свидания!");
+            System.out.println("Спасибо за заказ!");
             break;
         }
     }

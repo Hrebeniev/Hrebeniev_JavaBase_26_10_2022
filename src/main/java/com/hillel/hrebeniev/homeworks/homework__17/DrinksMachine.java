@@ -23,5 +23,4 @@ public enum DrinksMachine {
     public double getCost() {
         return cost;
     }
-
 }

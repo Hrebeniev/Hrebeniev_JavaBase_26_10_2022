@@ -25,7 +25,7 @@ public class DrinkPreparing {
                 this.drinks.add(drink);
                 this.totalCost += drink.getCost();
             } catch (java.lang.IllegalArgumentException e) {
-                System.out.println("Вы ввели некорректное название напитка. попробуйте еще раз.");
+                System.out.println("Вы ввели некорректное название напитка. Попробуйте еще раз.");
             }
         }
     }
