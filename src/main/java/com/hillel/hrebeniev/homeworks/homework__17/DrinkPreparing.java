@@ -1,4 +1,4 @@
-package com.hillel.hrebeniev.homeworks.homework_17;
+package com.hillel.hrebeniev.homeworks.homework__17;
 
 import java.util.ArrayList;
 import java.util.Arrays;

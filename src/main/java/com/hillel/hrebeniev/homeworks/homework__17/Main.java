@@ -1,9 +1,4 @@
-package com.hillel.hrebeniev.homeworks.homework_17;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
+package com.hillel.hrebeniev.homeworks.homework__17;
 
 public class Main {
 
