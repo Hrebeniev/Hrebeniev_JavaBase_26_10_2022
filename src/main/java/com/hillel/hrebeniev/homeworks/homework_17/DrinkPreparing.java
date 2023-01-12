@@ -10,4 +10,6 @@ public class DrinkPreparing {
     public static int getCounter() {
         return counter;
     }
+
+
 }
